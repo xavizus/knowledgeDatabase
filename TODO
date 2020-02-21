@@ -1,0 +1,10 @@
+☐ Add filebeat to a server (To log Access / Error logs from an NIGNX server for example).
+  Tips: https://discuss.elastic.co/t/take-input-from-more-than-5-servers/95330/3
+  Example:
+  filebeat:
+    prospectors:
+     - input_type: log
+       paths:
+        - C:\inetpub\logs\LogFiles\W3SVC1\*.log
+       fields:
+         document_type: server01-type
